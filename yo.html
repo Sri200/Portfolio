@@ -7,6 +7,7 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/fccbada816.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
     <script>
         window.addEventListener('load',(event)=>{
           document.querySelectorAll('.animate').forEach(obj=>{
@@ -35,7 +36,7 @@
             <div class="header-text">
                 <center>
                 <p>Web Developer</p>
-                <h1>Hi, Iam <span>Sriharsha</span></h1>
+                <h1>Hi, Iam <span class="auto-input"></span></h1>
                 </center>
             </div>
         </div>
@@ -187,6 +188,13 @@
         window.addEventListener("load",function(){
             loader.style.display="none";
         });
+        var typed=new Typed(".auto-input",{
+            strings:["Sriharsha","Web Developer"],
+            typeSpeed:100,
+            backSpeed:100,
+            loop:true
+        })
     </script>
+    
 </body>
 </html>
